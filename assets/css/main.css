@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@source "hugo_stats.json";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitcount+Grid+Double:slnt,CRSV,ELSH,ELXP@-8..0,0..1,0..100,0..100&family=Fira+Code:wght@300..700&family=La+Belle+Aurore&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap");
+
+/* Theme tokens */
+@theme {
+  --font-BebasNeue: "Bebas Neue", sans-serif;
+  --font-Bitcount: "Bitcount Grid Double", monospace;
+  --font-FiraCode: "Fira Code", monospace;
+  --font-LaBelle: "La Belle Aurore", cursive;
+  --font-Montserrat: "Montserrat", ui-sans-serif, system-ui;
+  --font-Neucha: "Neucha", cursive;
+  --font-Nunito: "Nunito", ui-sans-serif, system-ui;
+  --font-UbuntuMono: "Ubuntu Mono", monospace;
+  --font-VT323: "VT323", monospace;
+}

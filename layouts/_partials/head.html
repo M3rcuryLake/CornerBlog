@@ -1,0 +1,30 @@
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ block "title" . }}
+    {{- .Site.Title }} - {{ .Title -}}
+    {{ end }}</title>
+    {{- if .Description }}
+    <meta name="description" content="{{ .Description }}" />
+    {{ end -}}
+    {{- if .Keywords }}
+    <meta name="keywords" content="{{ delimit .Keywords " ," }}" />
+    {{ end -}}
+    {{- if .Params.Author }}
+    <meta name="author" content="{{ .Params.Author}}" />
+    {{ end -}}
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="{{ .Permalink }}" />
+
+    <!-- Open Graph (for social + indexing signals) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ .Title }}" />
+    <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    {{ hugo.Generator }}
+    {{ partialCached "css.html" . }}
+    {{ partialCached "js.html" . }}
+</head>

@@ -1,22 +1,131 @@
 <header
-  class="fixed top-0 left-0 hidden h-full w-48 shrink-0 flex-col justify-between px-6 py-8 2xl:flex"
+  class="fixed top-0 left-0 hidden h-full w-76 shrink-0 flex-col justify-between px-6 py-8 2xl:flex"
 >
-
-  <div>
-    <div class="logo-text mb-10 text-[1.1rem] leading-tight select-none">
-      Ankit<br />Muryn-Mukha
+  <style>
+    .slash {
+      width: 5px;
+      background: #a56cc1;
+      transform: rotate(-14deg);
+      transform-origin: center;
+      border-radius: 5px;
+      box-shadow:
+        0 0 3px #a56cc1,
+        0 0 20px #a56cc1,
+        0 0 40px #a56cc1,
+        0 0 80px #a56cc1;
+    }
+    .slash:nth-child(1) {
+      height: 21px;
+      opacity: 0.88;
+    }
+    .slash:nth-child(2) {
+      height: 33px;
+    }
+    .slash:nth-child(3) {
+      height: 25px;
+      opacity: 0.85;
+    }
+    .slash:nth-child(4) {
+      height: 17px;
+      opacity: 0.75;
+    }
+  </style>
+  <!--    }
+  .slash:nth-child(1) {
+    height: 26px;
+    opacity: 0.88;
+  }
+  .slash:nth-child(2) {
+    height: 38px;
+  }
+  .slash:nth-child(3) {
+    height: 30px;
+    opacity: 0.85;
+  }
+  .slash:nth-child(4) {
+    height: 22px;
+    opacity: 0.75;
+  } -->
+  <!-- flex h-full flex-col justify-between gap-20 -->
+  <div class="mt-28 ml-5">
+    <div
+      class="absolute z-20 flex -translate-y-1/2 items-center justify-start gap-1"
+    >
+      <span class="slash z-10"></span>
+      <span class="slash z-10"></span>
+      <span class="slash z-10"></span>
+      <span class="slash z-10"></span>
+      <p class="font-Bitcount ml-3 text-2xl leading-none font-bold text-black">
+        m3rcurylake
+      </p>
     </div>
+    <div
+      class="relative mt-24 rounded-[2.5em] bg-[#DCF0C3] p-8 text-black transition-transform duration-400 ease-in-out hover:scale-97 hover:cursor-pointer active:scale-90"
+    >
+      <div
+        class="flex h-full flex-col justify-between transition-transform duration-400 ease-in-out hover:scale-96"
+      >
+        <div class="flex justify-between">
+          <span class="m-0 font-bold">01.</span>
+          <p class="m-0 font-semibold">
+            <svg
+              width="24"
+              viewBox="0 -960 960 960"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M226-160q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-414q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-668q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Z"
+              ></path>
+            </svg>
+          </p>
+        </div>
+        <nav class="font-Montserrat mt-8 px-2 text-xl font-bold text-slate-500">
+          <div class="flex flex-col gap-3">
+            <a
+              href="#"
+              class="group relative inline-block w-fit cursor-pointer font-semibold transition-transform duration-300 hover:scale-[1.05]"
+            >
+              <span class="relative z-10 text-sm">About</span>
+              <span
+                class="absolute bottom-0 left-0 h-[2px] w-0 bg-amber-600 transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
 
-    <nav class="flex flex-col gap-3">
-      <a href="#" class="text-sm font-medium text-gray-400">Services</a>
-      <a href="#" class="text-sm text-gray-400">Work</a>
-      <a href="#" class="text-sm text-gray-400">Experience</a>
-      <a href="#" class="text-sm text-gray-400">Publications</a>
-      <a href="#" class="text-sm text-gray-400">About</a>
-    </nav>
+            <a
+              href="#"
+              class="group relative inline-block w-fit cursor-pointer font-semibold transition-transform duration-300 hover:scale-[1.05]"
+            >
+              <span class="relative z-10 text-sm">Work</span>
+              <span
+                class="absolute bottom-0 left-0 h-[2px] w-0 bg-amber-600 transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+
+            <a
+              href="#"
+              class="group relative inline-block w-fit cursor-pointer font-semibold transition-transform duration-300 hover:scale-[1.05]"
+            >
+              <span class="relative z-10 text-sm">Experience</span>
+              <span
+                class="absolute bottom-0 left-0 h-[2px] w-0 bg-amber-600 transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+
+            <a
+              href="#"
+              class="group relative inline-block w-fit cursor-pointer font-semibold transition-transform duration-300 hover:scale-[1.05]"
+            >
+              <span class="relative z-10 text-sm">Publications</span>
+              <span
+                class="absolute bottom-0 left-0 h-[2px] w-0 bg-amber-600 transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
   </div>
-
-
   <div class="flex flex-col gap-2">
     <a href="#" class="text-sm text-gray-400">LinkedIn</a>
     <a href="#" class="text-sm text-gray-400">Email</a>

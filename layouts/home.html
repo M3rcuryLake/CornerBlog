@@ -208,11 +208,11 @@
   <h1
     class="fade-up d1 mb-2 text-4xl leading-[1.1] font-bold text-[#222831] md:text-[4.25rem]"
   >
-    I'm Ankit, I make products feel obvious for technology that isn't
+    I'm Ankit, I make products feel obvious for technology.
   </h1>
 
   <p
-    class="fade-up d2 py-5 pr-5 text-xl leading-relaxed font-semibold text-[#393E46]"
+    class="fade-up d2 py-5 pr-5 text-xl leading-relaxed font-medium text-[#393E46]"
   >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed laoreet
     massa, quis convallis felis. Suspendisse efficitur posuere risus, vitae
@@ -220,26 +220,60 @@
     Integer vestibulum venenatis sodales. Donec volutpat mollis purus sed
     consectetur.
   </p>
-
-  <p
-    class="fade-up d3 mb-8 flex items-center gap-1.5 text-xl tracking-wide text-gray-700"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="h-3.5 w-3.5 shrink-0"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-      stroke-width="1.6"
+  <div class="mt-5 flex items-center justify-between">
+    <div
+      class="fade-up d3 flex items-center gap-1.5 text-xl tracking-wide text-gray-700"
     >
-      <circle cx="12" cy="12" r="10" />
-      <path
-        d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
-      />
-    </svg>
-    Chennai, TN, IN.
-  </p>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-3.5 w-3.5 shrink-0"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="1.6"
+      >
+        <circle cx="12" cy="12" r="10" />
+        <path
+          d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+        />
+      </svg>
+      Chennai, TN, IN.
+    </div>
 
+    <div class="flex items-center gap-10">
+      <div class="font-VT323 text-xl text-amber-500 hover:text-blue-500">
+        <a href="#">/my git/</a>
+      </div>
+      <a
+        href="#"
+        class="group relative mr-10 inline-block cursor-pointer p-1 font-semibold text-black"
+      >
+        <span class="flex">
+          <span
+            class="font-Neucha relative z-10 px-1 text-lg text-slate-700 transition-all duration-500 ease-out"
+            >Resume</span
+          >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="z-10 flex size-5.5 items-center"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 8.25H7.5a2.25 2.25 0 0 0-2.25 2.25v9a2.25 2.25 0 0 0 2.25 2.25h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25H15M9 12l3 3m0 0 3-3m-3 3V2.25"
+            />
+          </svg>
+        </span>
+        <span
+          class="absolute bottom-0 left-0 h-full w-0 bg-amber-500 transition-all duration-500 ease-out group-hover:w-full"
+        ></span>
+      </a>
+    </div>
+  </div>
   <div
     class="social-proof reveal-load block pt-16 md:flex md:items-stretch md:gap-3"
     data-reveal-delay="320"
@@ -280,13 +314,13 @@
     </div>
 
     <div
-      class="group relative mt-12 rounded-[2.5em] bg-[#FFF1D3] p-8 text-black transition-transform duration-400 ease-in-out hover:scale-97 hover:cursor-pointer active:scale-90 md:mt-0 md:w-[34rem]"
+      class="group relative mt-12 min-h-91 rounded-[2.5em] bg-[#FFF1D3] p-8 text-black transition-transform duration-400 ease-in-out hover:scale-97 hover:cursor-pointer active:scale-90 md:mt-0 md:w-[34rem]"
     >
       <div
-        class="flex h-full flex-col justify-between gap-20 transition-transform duration-400 ease-in-out group-hover:scale-[0.96]"
+        class="flex h-full flex-col justify-between gap-[250px] transition-transform duration-400 ease-in-out group-hover:scale-[0.96]"
       >
         <div class="flex justify-between">
-          <span class="m-0 font-bold">01.</span>
+          <span class="m-0 font-bold">02.</span>
           <p class="m-0 font-semibold">Lightning.</p>
         </div>
 
@@ -305,19 +339,87 @@
         </div>
       </div>
 
-      <div class="pointer-events-none absolute inset-0 grid place-items-center">
-        <svg
-          class="h-[4em] w-[4em] transition-transform duration-400 ease-in-out group-hover:scale-105"
-          viewBox="0 -960 960 960"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="m393-165 279-335H492l36-286-253 366h154l-36 255Zm-73 85 40-280H160l360-520h80l-40 320h240L400-80h-80Zm153-395Z"
-          />
-        </svg>
-      </div>
+      <div
+        id="type-target"
+        class="pointer-events-none absolute inset-0 m-10 grid place-items-center text-xl font-semibold text-slate-700"
+      ></div>
+      <script>
+        const strings = [
+          "I build things. I take raw ideas and force them into existence. Sometimes they even behave.",
+          "I break things. I pull systems apart just to see where they snap. That’s where the truth usually hides.",
+          "I reverse engineer. I read binaries like they’re stories written backwards. Every instruction leaves a trace.",
+          "I play with binaries. I twist them, mutate them, and watch what survives. It’s controlled chaos, mostly.",
+          "I make systems weird. I push them beyond what they were meant to handle. That’s where things get interesting.",
+        ];
+
+        const instance = new TypeIt("#type-target", {
+          speed: 30,
+          deleteSpeed: 20,
+          loop: true,
+          cursor: false,
+        });
+
+        strings.forEach((str) => {
+          instance.type(str).pause(1500).delete();
+        });
+
+        instance.go();
+      </script>
     </div>
   </div>
+  <section id="about" class="mx-auto mt-20 max-w-6xl px-6 py-10">
+    <h1
+      class="mb-8 text-4xl font-bold text-gray-900 underline decoration-yellow-400 underline-offset-4"
+    >
+      About me
+    </h1>
+
+    <div class="flex flex-col items-start gap-12 lg:flex-row">
+      <!-- Text -->
+      <div
+        class="flex-1 space-y-6 text-[1.05rem] leading-relaxed text-gray-900"
+      >
+        <p>
+          I studied software engineering and business analysis. My first years
+          were specs, process maps, and sitting between business and
+          engineering. Business and system analyst, UX designer and researcher.
+          Each role was a different layer of how software actually gets built.
+        </p>
+        <p>
+          That path pulled me into product design. I've worked across the whole
+          thing: system architecture, product strategy, pitch decks. What the
+          interface looks like, and why it works that way.
+        </p>
+        <p>
+          You get one person who owns design from research to release. No
+          handoff to worry about, no details lost in translation. What ships is
+          what was designed. I stay through the hard parts: pivots, fundraising,
+          the release that almost didn't ship.
+        </p>
+        <p>
+          Outside work, I'm into Streamline Moderne and constructivist
+          architecture. The way those movements balance structure with boldness
+          is how I think about design.
+        </p>
+        <p>
+          I choose early-stage because that's where one designer shapes the
+          whole product. Small team, full ownership, from first prototype to the
+          deck that raises the round.
+        </p>
+      </div>
+
+      <!-- Image -->
+      <div
+        class="aspect-[3/4] w-full shrink-0 overflow-hidden rounded-3xl bg-gray-200 lg:w-[320px]"
+      >
+        <img
+          src="https://picsum.photos/1280/720"
+          alt="Gregory"
+          class="h-full w-full object-cover"
+        />
+      </div>
+    </div>
+  </section>
 </article>
 
 <script>

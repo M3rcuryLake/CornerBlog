@@ -1,5 +1,5 @@
 <header
-  class="fixed top-0 left-0 hidden h-full w-76 shrink-0 flex-col justify-between px-6 py-8 2xl:flex"
+  class="fixed top-0 left-0 h-full w-76 shrink-0 flex-col justify-between px-6 py-8"
 >
   <style>
     .slash {
@@ -29,105 +29,148 @@
       height: 17px;
       opacity: 0.75;
     }
+    @keyframes impulse {
+      0% {
+        transform: scale(1) rotate(0deg);
+      }
+      20% {
+        transform: scale(1.35) rotate(-8deg);
+      }
+      40% {
+        transform: scale(0.9) rotate(5deg);
+      }
+      60% {
+        transform: scale(1.15) rotate(-3deg);
+      }
+      80% {
+        transform: scale(0.97) rotate(1deg);
+      }
+      100% {
+        transform: scale(1) rotate(0deg);
+      }
+    }
+    .impulse:hover svg {
+      animation: impulse 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    }
   </style>
-  <!--    }
-  .slash:nth-child(1) {
-    height: 26px;
-    opacity: 0.88;
-  }
-  .slash:nth-child(2) {
-    height: 38px;
-  }
-  .slash:nth-child(3) {
-    height: 30px;
-    opacity: 0.85;
-  }
-  .slash:nth-child(4) {
-    height: 22px;
-    opacity: 0.75;
-  } -->
-  <!-- flex h-full flex-col justify-between gap-20 -->
-  <div class="mt-28 ml-5">
-    <div
-      class="absolute z-20 flex -translate-y-1/2 items-center justify-start gap-1"
-    >
-      <span class="slash z-10"></span>
-      <span class="slash z-10"></span>
-      <span class="slash z-10"></span>
-      <span class="slash z-10"></span>
-      <p class="font-Bitcount ml-3 text-2xl leading-none font-bold text-black">
-        m3rcurylake
-      </p>
-    </div>
-    <div
-      class="relative mt-24 rounded-[2.5em] bg-[#DCF0C3] p-8 text-black transition-transform duration-400 ease-in-out hover:scale-97 hover:cursor-pointer active:scale-90"
-    >
-      <div
-        class="flex h-full flex-col justify-between transition-transform duration-400 ease-in-out hover:scale-96"
-      >
-        <div class="flex justify-between">
-          <span class="m-0 font-bold">01.</span>
-          <p class="m-0 font-semibold">
+  <nav class="mt-34">
+      <div class="py- relative flex flex-col items-center gap-1">
+        <!-- Home (active) -->
+        <div class="group impulse relative flex items-center">
+          <div
+            class="group flex h-12 w-12 cursor-pointer items-center justify-center rounded-2xl transition-all duration-300 hover:bg-stone-200"
+          >
             <svg
-              width="24"
-              viewBox="0 -960 960 960"
-              height="24"
               xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+            <path opacity="0.1" d="M17.7218 8.08382L14.7218 5.29811C13.4309 4.09937 12.7854 3.5 12 3.5C11.2146 3.5 10.5691 4.09937 9.2782 5.29811L6.2782 8.08382C5.64836 8.66867 5.33345 8.96109 5.16672 9.34342C5 9.72575 5 10.1555 5 11.015V16.9999C5 18.8856 5 19.8284 5.58579 20.4142C6.17157 20.9999 7.11438 20.9999 9 20.9999H9.75V16.9999C9.75 15.7573 10.7574 14.7499 12 14.7499C13.2426 14.7499 14.25 15.7573 14.25 16.9999V20.9999H15C16.8856 20.9999 17.8284 20.9999 18.4142 20.4142C19 19.8284 19 18.8856 19 16.9999L19 11.015C19 10.1555 19 9.72575 18.8333 9.34342C18.6666 8.96109 18.3516 8.66866 17.7218 8.08382Z" fill="#A98B76"/>
+            <path d="M19 9L19 17C19 18.8856 19 19.8284 18.4142 20.4142C17.8284 21 16.8856 21 15 21L14 21L10 21L9 21C7.11438 21 6.17157 21 5.58579 20.4142C5 19.8284 5 18.8856 5 17L5 9" stroke="#A98B76" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M3 11L7.5 7L10.6713 4.18109C11.429 3.50752 12.571 3.50752 13.3287 4.18109L16.5 7L21 11" stroke="#A98B76" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 21V17C10 15.8954 10.8954 15 12 15V15C13.1046 15 14 15.8954 14 17V21" stroke="#A98B76" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+          </div>
+          <div
+            class="pointer-events-none absolute left-full ml-3 -translate-x-1 opacity-0 transition-all duration-200 group-hover:translate-x-0 group-hover:opacity-100"
+          >
+            <span
+              class="rounded-2xl px-2 py-3 text-sm font-bold whitespace-nowrap text-stone-400 shadow-sm"
+              >Home</span
+            >
+          </div>
+
+          <div
+            class="pointer-events-none absolute left-full ml-3 flex flex-col items-start"
+          ></div>
+        </div>
+
+        <!-- Profile -->
+        <div class="group impulse relative flex items-center">
+          <div
+            class="group flex h-12 w-12 cursor-pointer items-center justify-center rounded-2xl transition-all duration-300 hover:bg-stone-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 text-[#A98B76]"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="#A98B76"
+              stroke-width="2"
+            >
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 7.063C16.5 10.258 14.57 13 12 13c-2.572 0-4.5-2.742-4.5-5.938C7.5 3.868 9.16 2 12 2s4.5 1.867 4.5 5.063zM4.102 20.142C4.487 20.6 6.145 22 12 22c5.855 0 7.512-1.4 7.898-1.857a.416.416 0 0 0 .09-.317C19.9 18.944 19.106 15 12 15s-7.9 3.944-7.989 4.826a.416.416 0 0 0 .091.317z"/>
+            </svg>
+          </div>
+          <div
+            class="pointer-events-none absolute left-full ml-3 -translate-x-1 opacity-0 transition-all duration-200 group-hover:translate-x-0 group-hover:opacity-100"
+          >
+            <span
+              class="rounded-2xl px-2 py-3 text-sm font-bold whitespace-nowrap text-stone-400 shadow-sm"
+              >Profile</span
+            >
+          </div>
+        </div>
+
+        <!-- Display -->
+        <div class="group impulse relative flex items-center">
+          <div
+            class="group flex h-12 w-12 cursor-pointer items-center justify-center rounded-2xl transition-all duration-300 hover:bg-stone-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="#A98B76"
+              stroke-width="2"
+            >
+              <rect x="2" y="4" width="20" height="13" rx="2" />
+              <path stroke-linecap="round" d="M8 21h8M12 17v4" />
+            </svg>
+          </div>
+          <div
+            class="pointer-events-none absolute left-full ml-3 -translate-x-1 opacity-0 transition-all duration-200 group-hover:translate-x-0 group-hover:opacity-100"
+          >
+            <span
+              class="rounded-2xl px-2 py-3 text-sm font-bold whitespace-nowrap text-stone-400 shadow-sm"
+              >Display</span
+            >
+          </div>
+        </div>
+
+        <!-- Camera -->
+        <div class="group impulse relative flex items-center">
+          <div
+            class="group flex h-12 w-12 cursor-pointer items-center justify-center rounded-2xl transition-all duration-300 hover:bg-stone-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="#A98B76"
+              stroke-width="2"
             >
               <path
-                d="M226-160q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-414q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-668q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Z"
-              ></path>
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"
+              />
+              <circle cx="12" cy="13" r="4" />
             </svg>
-          </p>
-        </div>
-        <nav class="font-Montserrat mt-8 px-2 text-xl font-bold text-slate-500">
-          <div class="flex flex-col gap-3">
-            <a
-              href="#"
-              class="group relative inline-block w-fit cursor-pointer font-semibold transition-transform duration-300 hover:scale-[1.05]"
-            >
-              <span class="relative z-10 text-sm">About</span>
-              <span
-                class="absolute bottom-0 left-0 h-[2px] w-0 bg-amber-600 transition-all duration-300 group-hover:w-full"
-              ></span>
-            </a>
-
-            <a
-              href="#"
-              class="group relative inline-block w-fit cursor-pointer font-semibold transition-transform duration-300 hover:scale-[1.05]"
-            >
-              <span class="relative z-10 text-sm">Work</span>
-              <span
-                class="absolute bottom-0 left-0 h-[2px] w-0 bg-amber-600 transition-all duration-300 group-hover:w-full"
-              ></span>
-            </a>
-
-            <a
-              href="#"
-              class="group relative inline-block w-fit cursor-pointer font-semibold transition-transform duration-300 hover:scale-[1.05]"
-            >
-              <span class="relative z-10 text-sm">Experience</span>
-              <span
-                class="absolute bottom-0 left-0 h-[2px] w-0 bg-amber-600 transition-all duration-300 group-hover:w-full"
-              ></span>
-            </a>
-
-            <a
-              href="#"
-              class="group relative inline-block w-fit cursor-pointer font-semibold transition-transform duration-300 hover:scale-[1.05]"
-            >
-              <span class="relative z-10 text-sm">Publications</span>
-              <span
-                class="absolute bottom-0 left-0 h-[2px] w-0 bg-amber-600 transition-all duration-300 group-hover:w-full"
-              ></span>
-            </a>
           </div>
-        </nav>
+          <div
+            class="pointer-events-none absolute left-full ml-3 -translate-x-1 opacity-0 transition-all duration-200 group-hover:translate-x-0 group-hover:opacity-100"
+          >
+            <span
+              class="rounded-2xl px-2 py-3 text-sm font-bold whitespace-nowrap text-stone-400 shadow-sm"
+              >Camera</span
+            >
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="flex flex-col gap-2">
-    <a href="#" class="text-sm text-gray-400">LinkedIn</a>
-    <a href="#" class="text-sm text-gray-400">Email</a>
-  </div>
+    </nav>
 </header>

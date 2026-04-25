@@ -28,3 +28,7 @@ ignoreLogs = ["warning-goldmark-raw-html"]
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+[pagination]
+    disableAliases = false
+    pagerSize = 10
+    path = 'page'
